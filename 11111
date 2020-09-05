@@ -1,0 +1,37 @@
+https://cloud.ibm.com/    
+
+V2ray一键安装脚本：（9月5日紧急更新，更新了自动选择N的问题）
+wget --no-check-certificate -O install.sh 
+
+https://raw.githubusercontent.com/bigfangfang/IBMYes/master/install.sh && chmod +x 
+
+install.sh  && ./install.sh
+
+
+
+Cloudflare 反代脚本：
+addEventListener(
+"fetch",event => {
+let url=new URL(event.request.url);
+url.hostname="你的域名";
+let request=new Request(url,event.request);
+event. respondWith(
+fetch(request)
+)
+}
+)
+
+
+域名1 ：cloudflare.com
+             icook.tw
+
+
+vmess://ICAgIHsKICAgICAgInYiOiAiMiIsCiAgICAgICJwcyI6ICJpYm15ZXMiLAogICAgICAiYWRkIjogImlibXl
+
+lcy51cy1zb3V0aC5jZi5hcHBkb21haW4uY2xvdWQiLAogICAgICAicG9ydCI6ICI0NDMiLAogICAgICAiaWQiOiAiM2
+
+I2MDA1ZWUtZDEwYi00YTlkLWEzNWQtZmEyMDYyMTc2YjNlIiwKICAgICAgImFpZCI6ICI0IiwKICAgICAgIm5ldCI6I
+
+CJ3cyIsCiAgICAgICJ0eXBlIjogIm5vbmUiLAogICAgICAiaG9zdCI6ICIiLAogICAgICAicGF0aCI6ICJwS1prU01o
+
+OHdZV2xlZkRMIiwKICAgICAgInRscyI6ICJ0bHMiCiAgICB9Cg==
